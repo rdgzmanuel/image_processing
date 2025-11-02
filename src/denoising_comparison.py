@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import numpy as np
 import matplotlib.pyplot as plt
-from skimage import data, img_as_float
 from skimage.restoration import denoise_tv_chambolle
 from skimage.filters import gaussian
 from skimage.util import random_noise
+import os
 
 
 class ImageDenoisingComparison:
@@ -92,37 +92,72 @@ class ImageDenoisingComparison:
 
     def compare_methods(
         self,
+        images_path: str,
+        variance_gaussian: float = 0.01,
         sigma_gauss: float = 1.0,
-        weight_tv: float = 0.1,
+        weights_tv: list[float] = [0.05, 0.1, 0.15, 0.25],
     ) -> None:
         """
         Compare Gaussian and TV denoising visually.
 
         Parameters
         ----------
+        images_path : str
+            Directory where plots will be saved.
+        variance_gaussian : float, optional
+            Variance of Gaussian noise.
         sigma_gauss : float, optional
             Sigma parameter for Gaussian filtering.
-        weight_tv : float, optional
-            Lambda (regularization) parameter for TV Chambolle.
+        weights_tv : list[float], optional
+            List of regularization weights (λ) for TV Chambolle.
         """
-        img_gauss = self.denoise_gaussian(sigma=sigma_gauss)
-        img_tv = self.denoise_tv(weight=weight_tv)
+        os.makedirs(images_path, exist_ok=True)
 
-        fig, axes = plt.subplots(1, 4, figsize=(16, 5))
-        ax = axes.ravel()
+        # Compute results
+        img_gauss: np.ndarray = self.denoise_gaussian(sigma=sigma_gauss)
+        images_tv: list[np.ndarray] = [self.denoise_tv(weight=w) for w in weights_tv]
+
+        # --- First plot: comparison of main methods ---
+        fig1, axes1 = plt.subplots(1, 4, figsize=(16, 5))
+        ax = axes1.ravel()
 
         ax[0].imshow(self.image_original, cmap="gray")
         ax[0].set_title("Original")
+
         ax[1].imshow(self.image_noisy, cmap="gray")
-        ax[1].set_title("Noisy (Gaussian)")
+        ax[1].set_title(f"Noisy (Gaussian noise, var={variance_gaussian})")
+
         ax[2].imshow(img_gauss, cmap="gray")
         ax[2].set_title(f"Gaussian Filter (σ={sigma_gauss})")
+
+        plot_index: int = min(2, len(weights_tv) - 1)
+        img_tv = images_tv[plot_index]
         ax[3].imshow(img_tv, cmap="gray")
-        ax[3].set_title(f"TV Chambolle (λ={weight_tv})")
+        ax[3].set_title(f"TV Chambolle (λ={weights_tv[plot_index]})")
 
         for a in ax:
             a.axis("off")
 
+        fig1.suptitle("Denoising Comparison: Gaussian vs. TV", fontsize=16, y=1.02)
         plt.tight_layout()
-        plt.show()
+        save_path_1 = os.path.join(images_path, "denoising_comparison.jpg")
+        plt.savefig(save_path_1, bbox_inches="tight", dpi=150)
+
+        fig2, axes2 = plt.subplots(1, len(weights_tv), figsize=(4 * len(weights_tv), 4))
+        if len(weights_tv) == 1:
+            axes2 = [axes2]
+
+        for ax, img, w in zip(axes2, images_tv, weights_tv):
+            ax.imshow(img, cmap="gray")
+            ax.set_title(f"λ = {w}")
+            ax.axis("off")
+
+        fig2.suptitle("TV Denoising for Different λ Values", fontsize=16, y=1.02)
+        plt.tight_layout()
+        save_path_2 = os.path.join(images_path, "tv_lambda_comparison.jpg")
+        plt.savefig(save_path_2, bbox_inches="tight", dpi=150)
+
+        print(f"Saved comparison plots to:\n  {save_path_1}\n  {save_path_2}")
+
+
 
