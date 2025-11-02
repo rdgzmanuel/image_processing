@@ -130,7 +130,7 @@ class ImageDenoisingComparison:
         ax[2].imshow(img_gauss, cmap="gray")
         ax[2].set_title(f"Gaussian Filter (σ={sigma_gauss})")
 
-        plot_index: int = min(2, len(weights_tv) - 1)
+        plot_index: int = min(1, len(weights_tv) - 1)
         img_tv = images_tv[plot_index]
         ax[3].imshow(img_tv, cmap="gray")
         ax[3].set_title(f"TV Chambolle (λ={weights_tv[plot_index]})")

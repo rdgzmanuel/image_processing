@@ -15,6 +15,6 @@ if __name__ == "__main__":
     path: str = os.path.join(images_path, image_name)
     gaussian_variance: float = 0.15  # 0.01
     sigma_gaussian: float = 0.25      # 1.0
-    tv_weights: list[float] = [0.05, 0.1, 0.15, 0.25]       # 0.15
+    tv_weights: list[float] = [0.01, 0.05, 0.1, 0.15]       # 0.15
 
     main(path, images_path, tv_weights, gaussian_variance, sigma_gaussian)
