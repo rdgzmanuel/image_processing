@@ -91,15 +91,12 @@ def download_medical_images(images_folder: str) -> Tuple[List[np.ndarray], List[
         try:
             xray_img = io.imread(xray_path)
             
-            # Convert to grayscale if needed
             if xray_img.ndim == 3:
                 xray_img = color.rgb2gray(xray_img)
             
-            # Normalize to [0, 1]
             xray_img = img_as_float(xray_img)
             
             images.append(xray_img)
-            # Create clean name from filename
             name = xray_file.replace('.jpeg', '').replace('_', ' ').title()
             names.append(f"Xray_{name}")
             
