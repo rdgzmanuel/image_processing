@@ -24,7 +24,7 @@ class ImageDenoisingComparison:
         Noisy version of the original image.
     """
 
-    def __init__(self, image: np.ndarray) -> None:
+    def __init__(self, image: np.ndarray, noise_variance: float = 0.01) -> None:
         """
         Initialize the class with a base image.
 
@@ -32,25 +32,23 @@ class ImageDenoisingComparison:
         ----------
         image : np.ndarray
             Original image as float in range [0, 1].
+        noise_variance : float, optional
+            Variance of Gaussian noise.
         """
         self.image_original: np.ndarray = image
         self.image_noisy: np.ndarray | None = None
+        self.noise_variance: float = noise_variance
 
-    def add_gaussian_noise(self, var: float = 0.01) -> np.ndarray:
+    def add_gaussian_noise(self) -> np.ndarray:
         """
         Add Gaussian noise to the original image.
-
-        Parameters
-        ----------
-        var : float, optional
-            Variance of the Gaussian noise, by default 0.01.
 
         Returns
         -------
         np.ndarray
             Noisy image.
         """
-        self.image_noisy = random_noise(self.image_original, mode="gaussian", var=var)
+        self.image_noisy = random_noise(self.image_original, mode="gaussian", var=self.noise_variance)
         return self.image_noisy
 
     def denoise_gaussian(self, sigma: float = 1.0) -> np.ndarray:
@@ -93,7 +91,6 @@ class ImageDenoisingComparison:
     def compare_methods(
         self,
         images_path: str,
-        variance_gaussian: float = 0.01,
         sigma_gauss: float = 1.0,
         weights_tv: list[float] = [0.05, 0.1, 0.15, 0.25],
     ) -> None:
@@ -104,8 +101,6 @@ class ImageDenoisingComparison:
         ----------
         images_path : str
             Directory where plots will be saved.
-        variance_gaussian : float, optional
-            Variance of Gaussian noise.
         sigma_gauss : float, optional
             Sigma parameter for Gaussian filtering.
         weights_tv : list[float], optional
@@ -125,7 +120,7 @@ class ImageDenoisingComparison:
         ax[0].set_title("Original")
 
         ax[1].imshow(self.image_noisy, cmap="gray")
-        ax[1].set_title(f"Noisy (Gaussian noise, var={variance_gaussian})")
+        ax[1].set_title(f"Noisy (Gaussian noise, var={self.noise_variance})")
 
         ax[2].imshow(img_gauss, cmap="gray")
         ax[2].set_title(f"Gaussian Filter (σ={sigma_gauss})")
@@ -160,4 +155,56 @@ class ImageDenoisingComparison:
         print(f"Saved comparison plots to:\n  {save_path_1}\n  {save_path_2}")
 
 
+    def compare_tv_lambda_sweep(
+        self,
+        images: list[np.ndarray],
+        image_names: list[str],
+        weights_tv: list[float],
+        save_path: str,
+        cmap: str = "gray"
+    ) -> None:
+        """
+        For each image in `images`, apply TV denoising for each weight in `weights_tv`,
+        then create and save a plot comparing: original → noisy → denoised for each λ.
 
+        Parameters
+        ----------
+        images : list[np.ndarray]
+            List of original clean images.
+        image_names : list[str]
+            Corresponding names/descriptions for the images (for titles/filenames).
+        weights_tv : list[float]
+            List of λ (regularisation weights) for the TV denoising.
+        save_path : str
+            Directory path where result plots will be saved.
+        cmap : str, optional
+            Colormap for plotting images (default “gray”).
+        """
+        os.makedirs(save_path, exist_ok=True)
+
+        for img, name in zip(images, image_names):
+            self.image_original = img
+            self.image_noisy = self.add_gaussian_noise()
+
+            results = [ self.denoise_tv(weight=w) for w in weights_tv ]
+
+            ncols = 2 + len(weights_tv)
+            fig, axes = plt.subplots(1, ncols, figsize=(4*ncols, 4))
+            ax = axes.ravel()
+
+            ax[0].imshow(self.image_original, cmap=cmap)
+            ax[0].set_title(f"{name} – Original")
+            ax[1].imshow(self.image_noisy, cmap=cmap)
+            ax[1].set_title(f"{name} – Noisy (var={self.noise_variance})")
+
+            for idx, (w, res_img) in enumerate(zip(weights_tv, results)):
+                ax[2 + idx].imshow(res_img, cmap=cmap)
+                ax[2 + idx].set_title(f"λ = {w:.3f}")
+
+            for a in ax:
+                a.axis("off")
+
+            fig.suptitle(f"TV Denoising λ-Sweep: {name}", fontsize=14, y=1.02)
+            plt.tight_layout()
+            filename = os.path.join(save_path, f"tv_sweep_{name.replace(' ', '_')}.jpg")
+            plt.savefig(filename, bbox_inches="tight", dpi=150)
