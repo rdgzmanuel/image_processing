@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from skimage.restoration import denoise_tv_chambolle
 from skimage.filters import gaussian
 from skimage.util import random_noise
+from .adaptive_tv import adaptive_tv_denoise, edge_weight_map
 import os
 
 
@@ -208,3 +209,90 @@ class ImageDenoisingComparison:
             plt.tight_layout()
             filename = os.path.join(save_path, f"tv_sweep_{name.replace(' ', '_')}.jpg")
             plt.savefig(filename, bbox_inches="tight", dpi=150)
+
+    def denoise_tv_adaptive(
+        self,
+        lambda_data: float = 0.2,
+        eps: float = 1e-3,
+        dt: float = 0.2,
+        iters: int = 200,
+        sigma_edge: float = 1.0,
+        k_percentile: float = 90.0,
+        beta: float = 2.0,
+        w_map: np.ndarray | None = None,
+    ) -> np.ndarray:
+        """
+        Denoising TV con adaptación espacial (w(x) y/o λ(x)).
+
+        Si w_map no se pasa, se calcula automáticamente a partir de la imagen ruidosa.
+        """
+        if self.image_noisy is None:
+            raise ValueError("Primero genera la imagen ruidosa con add_gaussian_noise().")
+        return adaptive_tv_denoise(
+            f_noisy=self.image_noisy,
+            lambda_data=lambda_data,
+            w_map=w_map,
+            eps=eps,
+            dt=dt,
+            iters=iters,
+            sigma_edge=sigma_edge,
+            k_percentile=k_percentile,
+            beta=beta,
+        )
+
+    def compare_tv_adaptive_sweep(
+        self,
+        save_path: str,
+        lambdas: list[float] = (0.05, 0.1, 0.2),
+        sigma_edge: float = 1.0,
+        k_percentile: float = 90.0,
+        beta: float = 2.0,
+        iters: int = 200,
+        dt: float = 0.2,
+        eps: float = 1e-3,
+        cmap: str = "gray",
+        title_suffix: str = "",
+    ) -> None:
+        """
+        Compara el método TV adaptativo para varios λ sobre la imagen actual.
+        Guarda una figura: original | noisy | resultados para λ de la lista.
+        """
+        os.makedirs(save_path, exist_ok=True)
+        if self.image_noisy is None:
+            raise ValueError("Primero genera la imagen ruidosa con add_gaussian_noise().")
+
+        # Un único w(x) consistente por imagen ruidosa:
+        w_map = edge_weight_map(
+            self.image_noisy, sigma=sigma_edge, k_percentile=k_percentile, beta=beta
+        )
+
+        results = [
+            adaptive_tv_denoise(
+                f_noisy=self.image_noisy,
+                lambda_data=lmb,
+                w_map=w_map,
+                eps=eps,
+                dt=dt,
+                iters=iters,
+            )
+            for lmb in lambdas
+        ]
+
+        ncols = 2 + len(lambdas)
+        fig, axes = plt.subplots(1, ncols, figsize=(4 * ncols, 4))
+        ax = axes.ravel()
+
+        ax[0].imshow(self.image_original, cmap=cmap)
+        ax[0].set_title("Original"); ax[0].axis("off")
+        ax[1].imshow(self.image_noisy, cmap=cmap)
+        ax[1].set_title("Noisy"); ax[1].axis("off")
+
+        for i, (lmb, img) in enumerate(zip(lambdas, results)):
+            ax[2 + i].imshow(img, cmap=cmap)
+            ax[2 + i].set_title(rf"Adapt. TV, $\lambda={lmb}$"); ax[2 + i].axis("off")
+
+        fig.suptitle(f"Adaptive TV λ-sweep {title_suffix}".strip(), y=1.02)
+        fig.tight_layout()
+        fname = os.path.join(save_path, "tv_adaptive_sweep.jpg")
+        fig.savefig(fname, bbox_inches="tight", dpi=150)
+        print(f"Saved: {fname}")
