@@ -1,0 +1,631 @@
+2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+2025-11-17 01:18:16.092050997  INFO Configuration file watcher successfully registered
+2025-11-17 01:23:56.630089942  INFO Server shut down
+2025-11-17 01:27:18.117021747 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:27:18.190812221  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+2025-11-17 01:27:18.195485011  INFO Configuration file watcher successfully registered
+2025-11-17 01:43:26.717250325  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:43:26.720096748 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:43:27.339269029  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:43:27.339724806 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:43:28.386563568  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/typing.py - falling back to default settings
+2025-11-17 01:43:28.386916008 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:43:28.480853685  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/typing.py - falling back to default settings
+2025-11-17 01:43:28.481188351 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:44:36.051398663  INFO Server shut down
+2025-11-17 01:44:36.417707011 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:44:36.473785104  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+2025-11-17 01:44:36.482223733  INFO Configuration file watcher successfully registered
+2025-11-17 01:48:50.699050646  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.13.7-linux-x86_64-gnu/lib/python3.13/typing.py - falling back to default settings
+2025-11-17 01:48:50.700502365 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:48:50.777881378  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.13.7-linux-x86_64-gnu/lib/python3.13/typing.py - falling back to default settings
+2025-11-17 01:48:50.778235145 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:48:52.545920947  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.13.7-linux-x86_64-gnu/lib/python3.13/typing.py - falling back to default settings
+2025-11-17 01:48:52.546269899 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:48:52.698450265  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.13.7-linux-x86_64-gnu/lib/python3.13/typing.py - falling back to default settings
+2025-11-17 01:48:52.698770798 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:48:57.590474780  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:48:57.590901587 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:48:57.694586039  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:48:57.694993290 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:49:56.870237180  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:49:56.870620792 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:49:56.955738369  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:49:56.956161760 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:51:06.611196654  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:51:06.611641786 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 01:51:06.806869372  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 01:51:06.807296135 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:04.784467144  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:04.789385185 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:04.966175557  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:04.966662862 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:05.454208295  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:05.454869545 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:05.543812108  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:05.544391230 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:20.158014229  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:20.159557358 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:20.374930318  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:20.375516245 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:20.801572597  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:20.802023032 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:20.867882824  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:20.868515247 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:21.526238685  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:21.526683298 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:21.602823156  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:21.603351820 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:31.586559009  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:31.587182541 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:31.670767860  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:31.671271533 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:32.117331717  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:32.117853467 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:32.181665048  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:32.182193963 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:44.560763892  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:44.561800415 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:44.669153267  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:44.669638477 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:57.109981574  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:57.110743330 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:24:57.184914084  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:24:57.185424649 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:26:42.914284985  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:26:42.915446823 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:26:43.154970993  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:26:43.156005179 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:34:33.745065837  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:34:33.745802041 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:34:33.939711639  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:34:33.940525805 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:44:01.015447775  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.13.7-linux-x86_64-gnu/lib/python3.13/typing.py - falling back to default settings
+2025-11-17 02:44:01.023659934 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:44:01.214688038  WARN No settings available for file:///home/miguelmnts/.local/share/uv/python/cpython-3.13.7-linux-x86_64-gnu/lib/python3.13/typing.py - falling back to default settings
+2025-11-17 02:44:01.215418400 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:48:38.710097384  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:48:38.712856217 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:48:38.841215258  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:48:38.841810363 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:48:51.234687556  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:48:51.235398551 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:48:51.341350963  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:48:51.341949859 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:49:15.765976685  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:49:15.767151938 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 02:49:15.833986801  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 02:49:15.834527576 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 03:17:14.538470080  WARN Unable to format document: Unexpected indentation at byte range 10694..10706
+2025-11-17 03:54:44.822244996  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 03:54:44.841092812 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 03:54:45.044182774  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 03:54:45.045036313 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 04:00:23.260648071  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 04:00:23.262897200 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 04:00:23.392408204  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 04:00:23.393250907 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 04:00:24.464712342  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 04:00:24.465406319 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
+2025-11-17 04:00:24.564701382  WARN No settings available for file:///home/miguelmnts/.vscode-server/extensions/ms-python.vscode-pylance-2025.9.1/dist/typeshed-fallback/stdlib/builtins.pyi - falling back to default settings
+2025-11-17 04:00:24.565362357 ERROR Unable to load editor-specified configuration file
+
+Caused by:
+    0: Failed to load configuration `/home/miguelmnts/data/math-repos/image_processing/null`
+    1: Failed to parse /home/miguelmnts/data/math-repos/image_processing/null
+    2: TOML parse error at line 1, column 12
+         |
+       1 | 2025-11-17 01:18:15.885568153  INFO Registering workspace: /home/miguelmnts/data/math-repos/image_processing
+         |            ^
+       key with no value, expected `=`
+       
