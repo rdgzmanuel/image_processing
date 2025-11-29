@@ -1,107 +1,114 @@
-# Image Denoising using Total Variation and Spatially Adaptive Models
+# Image Processing via Total Variation
 
-This project implements image denoising techniques based on Total Variation (TV), including the classical Rudin–Osher–Fatemi (ROF) model and an extended Spatially Adaptive TV method for improved edge preservation.  
-It also demonstrates applications on medical images (MRI brain scans and X-ray images).
+This project implements image denoising techniques based on the Calculus of Variations. It explores the classical Rudin–Osher–Fatemi (ROF) model, a Spatially Adaptive TV method for edge preservation, and Higher Order Regularizers to mitigate staircasing effects.
+
+The implementation focuses on the balance between noise reduction and structural preservation, with specific applications to medical imaging (MRI and X-ray).
 
 ## Project Overview
 
-The project is inspired by variational methods in image processing and follows the theoretical formulation presented in the document *“De la Braquistócrona al Procesamiento de Imágenes”*.  
-It shows how variational calculus principles can be applied to remove noise from images while maintaining important structures and edges.
+The project follows the theoretical formulation presented in the report *“Image Processing via Calculus of Variations”*. It demonstrates how calculus of variations principles, historically used for problems like the Brachistochrone, can be applied to modern image processing.
 
-Implemented methods:
+**Key Methods:**
 
-- Gaussian smoothing (baseline denoising)
-- Classical Total Variation (ROF) model
-- Spatially Adaptive TV model (new contribution)
-  - Uses a spatial weighting function w(x) to control local smoothing.
-  - Reduces diffusion near edges while smoothing flat regions.
+* **Gaussian Smoothing:** Baseline linear filtering for comparison.
+* **Rudin–Osher–Fatemi (ROF):** Minimizes total variation to remove noise while maintaining sharp edges.
+* **Spatially Adaptive TV:** Introduces a spatial weighting function $w(x)$ to inhibit diffusion near edges.
+* **Higher Order Regularization:** Penalizes the Laplacian to produce smoother gradients and avoid piecewise constant artifacts.
+
+## Installation
+
+The project requires Python 3 and the following dependencies:
+
+```bash
+pip install numpy matplotlib scikit-image scipy
+```
 
 ## Folder Structure
 
-```bash
+```text
 image_processing/
 │
 ├── src/
-│ ├── utils.py # Utility functions (image loading, dataset handling)
-│ ├── denoising_comparison.py # Main class with denoising methods (Gaussian, ROF, Adaptive TV)
-│ ├── adaptive_tv.py # Implementation of the spatially adaptive TV model
-│ ├── regularizer_tv.py # Implementation of the high order TV model (regularizer)
+│   ├── utils.py                     # Utility functions (image loading, dataset handling)
+│   ├── denoising_comparison.py      # Main class for denoising (Gaussian, ROF, Adaptive)
+│   ├── adaptive_tv.py               # Implementation of the Spatially Adaptive TV model
+│   ├── regularizer_tv.py            # Implementation of the Higher Order TV model
+|   ├── main_denoising_comparison.py # Script for standard image comparison
+|   ├── main_medical_comparison.py   # Script for medical dataset comparison
 │
-├── images/ # Input images (e.g., MRI, X-ray, example photos)
+├── images/                          # Input images (e.g., MRI, X-ray, standard test images)
 │
-├── results/ # Output images and comparison figures
+├── written_report/
+│   ├── image_processing_english.pdf   # Theoretical report (English)
+│   ├── image_processing_spanish.pdf   # Theoretical report (Spanish)
 │
-├── main_denoising_comparison.py # Runs comparison on a standard image (e.g., iniesta.jpg)
-├── main_medical_comparison.py # Runs denoising on medical datasets
-│
-├── Branquistócrona al Procesamiento de Imagen.pdf # Project report (theoretical background)
+├── requirements.txt                 # Libraries dependencies
 └── README.md
 ```
 
-## How to Run
+## Usage
 
-### 1. Standard Denoising Comparison
+### Standard Image Denoising
 
-Run the comparison on a regular image (e.g., iniesta.jpg):
+To run the comparison on a standard test image (e.g., `iniesta.jpg`):
 
-```python
+```bash
 python main_denoising_comparison.py
 ```
 
-This will:
+This script:
+1.  Adds Gaussian noise to the input.
+2.  Applies Gaussian filter and ROF denoising with varying $\lambda$.
+3.  Applies Spatially Adaptive TV.
+4.  Saves results to `images/results_adaptive/`.
 
-- Load the image and add Gaussian noise.
-- Apply Gaussian filter and TV (ROF) denoising for different λ values.
-- Apply Spatially Adaptive TV denoising for comparison.
-- Save the output figures under `images/results_adaptive/`.
+### Medical Image Denoising
 
-### 2. Medical Image Denoising
+To run the analysis on medical datasets:
 
-Run the adaptive denoising pipeline on medical images:
-
-```python
+```bash
 python main_medical_comparison.py
 ```
 
 This script:
+1.  Loads/downloads MRI (brain) and X-ray (lungs) datasets.
+2.  Compares Classical TV vs. Adaptive TV.
+3.  Saves results to `results/medical_denoising/`.
 
-- Downloads or loads MRI and X-ray images.
-- Compares classical TV and Adaptive TV for multiple λ values.
-- Saves results under `results/medical_denoising/` and `results/medical_denoising_adaptive/`.
+## Mathematical Formulation
 
-## Adaptive TV Model Summary
+### 1. Classical ROF Model
+The model minimizes the following functional, balancing data fidelity ($L^2$ norm) and total variation regularization:
 
-The Spatially Adaptive TV model minimizes the following functional:
-
-<!-- **E(u) = ∫Ω w(x)·|∇u| dx + (1/2) ∫Ω λ(x)·(u − f)² dx** -->
 $$
-E(u) = \int_{\Omega} w(x)\, |\nabla u| \, dx
-\;+\; \frac{1}{2} \int_{\Omega} \lambda(x)\, (u - f)^2 \, dx
+J[u] = \frac{1}{2} \int_{\Omega} (u - f)^2 \, dx + \lambda \int_{\Omega} |\nabla u| \, dx
 $$
 
-where:
+### 2. Spatially Adaptive TV
+To better preserve edges, we introduce a weight $w(x)$ that approaches 0 at edges and 1 in flat regions:
 
-- **w(x)** = exp(−(|∇(Gσ * f)| / k)^β) controls diffusion near edges  
-- **λ(x)** adjusts data fidelity (often constant)
+$$
+E(u) = \int_{\Omega} w(x)\, |\nabla u| \, dx + \frac{1}{2} \int_{\Omega} \lambda(x)\, (u - f)^2 \, dx
+$$
 
-This formulation smooths homogeneous regions while preserving sharp boundaries — particularly useful for medical imaging.
+Where the weight is defined by the gradient of the smoothed image $G_\sigma * f$:
 
-## Example Results
+$$
+w(x) = \exp\left(-\left(\frac{|\nabla (G_\sigma * f)|}{k}\right)^\beta\right)
+$$
 
-- MRI Brain Scan: preserves tissue boundaries while denoising.
-- X-Ray (lungs): effectively removes noise without losing edge details.
-- Standard Image (Lena/Iniesta): smoother textures, sharp edges.
+### 3. Higher Order Regularization
+To address the "staircasing" effect (blocky artifacts) inherent in TV, we include a Laplacian term:
 
-Each method produces side-by-side comparisons with different λ values.
+$$
+J[u] = \frac{1}{2}\int_\Omega (u-f)^2\,dx + \frac{\alpha}{2}\int_\Omega |\nabla u|^2\,dx + \frac{\beta}{2}\int_\Omega (\Delta u)^2\,dx
+$$
 
 ## References
 
-- L. Rudin, S. Osher, and E. Fatemi, “Nonlinear total variation based noise removal algorithms,” Physica D, 1992.  
-- Theoretical background in the project report *“De la Braquistócrona al Procesamiento de Imágenes”*.  
-- Dataset sources:
-  - scikit-image sample datasets.
-  - Kaggle Chest X-Ray Images (Pneumonia) dataset.
+* L. Rudin, S. Osher, and E. Fatemi, "Nonlinear total variation based noise removal algorithms," *Physica D*, 1992.
+* Datasets: `scikit-image` library and Kaggle Chest X-Ray Images (Pneumonia).
 
-## Author Credits
+## Authors
 
-Developed by Joaquín Mir Macías, Miguel Montes Lorenzo, and Manuel Rodríguez Villegas
+Joaquín Mir Macías, Miguel Montes Lorenzo, Manuel Rodríguez Villegas
