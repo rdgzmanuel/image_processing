@@ -3,7 +3,7 @@ from src.denoising_comparison import ImageDenoisingComparison
 
 def main(images_folder: str) -> None:
     images, names = download_medical_images(images_folder)
-    denoiser = ImageDenoisingComparison(images[0])  # temporary init
+    denoiser = ImageDenoisingComparison(images[0], noise_variance=0.0)  # temporary init
 
     weights_tv = [0.05, 0.1, 0.2]
     save_dir = "results/medical_denoising"
